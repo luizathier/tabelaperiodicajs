@@ -1,4 +1,4 @@
-[
+const colecaoElementos = [
   {
     "massaAtomica": "1.00794(4)",
     "numeroAtomico": "1",
@@ -11,6 +11,7 @@
     "eletronegatividade": "2.2",
     "configuracaoEletronica": "1s1",
     "grupo": "não metal",
+    "corGrupo": "#00FF00",
     "raioIonico": "",
     "energiaDeIonizacao": "1312",
     "pontoDeFusao": "14",
@@ -35,6 +36,7 @@
     "eletronegatividade": "",
     "configuracaoEletronica": "1s2",
     "grupo": "gás nobre",
+    "corGrupo": "#FFEB3B",
     "raioIonico": "",
     "energiaDeIonizacao": "2372",
     "pontoDeFusao": "",
@@ -59,6 +61,7 @@
     "eletronegatividade": "0.98",
     "configuracaoEletronica": "[He] 2s1",
     "grupo": "metal alcalino",
+    "corGrupo": "#FF5733",
     "raioIonico": "76 (+1)",
     "energiaDeIonizacao": "520",
     "pontoDeFusao": "454",
@@ -2832,3 +2835,20 @@
     "coluna": 18
   }
 ]
+
+colecaoElementos.forEach(e => {
+  if (!e.corGrupo) {
+    if (e.grupo === 'metal alcalino') e.corGrupo = '#FF5733';
+    else if (e.grupo === 'metal alcalino-terroso') e.corGrupo = '#00C853'; // verde escuro vibrante
+    else if (e.grupo === 'lantanídeo') e.corGrupo = '#FFD700';
+    else if (e.grupo === 'actinoid') e.corGrupo = '#FF33A8';
+    else if (e.grupo === 'metal de transição') e.corGrupo = '#3380FF';
+    else if (e.grupo === 'metal') e.corGrupo = '#AAAAAA';
+    else if (e.grupo === 'metalóide') e.corGrupo = '#00FFD0';
+    else if (e.grupo === 'não metal') e.corGrupo = '#00FF00';
+    else if (e.grupo === 'halogênio') e.corGrupo = '#FF00FF';
+    else if (e.grupo === 'gás nobre') e.corGrupo = '#FFD600'; // amarelo forte
+    else if (e.grupo === 'post-transition metal') e.corGrupo = '#FF9800';
+    else e.corGrupo = '#CCCCCC'; // cor padrão para grupos desconhecidos
+  }
+});
