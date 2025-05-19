@@ -33,6 +33,10 @@ body {
     cursor: url("./img/scii.png") 10 10, auto;
     border: inset ;
   }
+  .elemento:hover{
+    color: white;
+    font-size: 16px;
+  }
   
   img{
     margin-top: 1%;
