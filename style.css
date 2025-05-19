@@ -39,4 +39,14 @@ body {
     margin-left: -20%;
   }
   
+  .minecraft {
+    position: fixed;
+    background: #b3b3b3;
+    background: linear-gradient(0deg, rgba(179, 179, 179, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 100;
+    border: inset;
+  }
   
