@@ -31,3 +31,4 @@ colecaoElementos.forEach(el => {
   });
 });
 const minecraft = document.getElementById('minecraft');
+

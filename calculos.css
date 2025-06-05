@@ -7,11 +7,11 @@ body {
     padding: 20px;
     background-image: url(https://static.vecteezy.com/system/resources/thumbnails/037/202/072/original/abstract-white-sci-fi-tunnel-seamless-loop-4k-3d-animation-background-free-video.jpg);
     background-size: contain;
-    background-color:gainsboro
+    background-color:gainsboro;
+    text-align: center;
 }
 img{
     margin-top: -10%;
-    margin-left: 26%;
 }
 .calculodivcargaeletrica {
     padding: 20px;
@@ -28,7 +28,6 @@ button {
     background: #000000;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(138, 138, 138, 1) 100%);
     color: white;
-    border: none;
     cursor: url("./img/scii.png") 10 10, auto;
 }
 button:hover {
@@ -37,6 +36,31 @@ button:hover {
     font-size: medium;
 }
 .resultado{
-    color: greenyellow;
+    color: rgb(85, 199, 68);
     margin-top: 2%;
+}
+#botaotabela{
+    color: #f4f4f4;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(138, 138, 138, 1) 100%);
+    width: 80%;
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: large;
+}
+#botaotabela:hover{
+    background: #4f4d4d;
+    background: linear-gradient(0deg, rgba(79, 77, 77, 1) 0%, rgba(171, 171, 171, 1) 100%);
+    cursor: url("./img/scii.png") 10 10, auto;
+    font-size: x-large;
+}
+input{
+    background: #b3b3b3;
+    background: linear-gradient(0deg, rgba(179, 179, 179, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    color: black;
+    padding: 5px;
+}
+input:hover{
+    font-size: medium;
 }

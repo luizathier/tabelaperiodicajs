@@ -1,9 +1,10 @@
-
 function calcularCarga() {
-const e = 1.6e-19;
-const n = document.getElementById('cargas').value;
-const Q = cargas * e;
-document.getElementById('resultadoCarga').innerHTML = `Q = ${Q} C`;}
+const formula = 1.6e-19;
+const cargafoda = Number(document.getElementById('cargas').value);
+const resultadin = cargafoda * formula;
+ document.getElementById('resultadoCarga').innerHTML = `Q = ${resultadin} C`;
+}
+
 
 function calcularForca() {
 const k = 9e9;
