@@ -1,0 +1,42 @@
+*{
+    font-family: Arial, sans-serif;
+    cursor: url("./img/aero\ normal\ \(large\).cur") 10 10, auto;
+}
+
+body {
+    padding: 20px;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/037/202/072/original/abstract-white-sci-fi-tunnel-seamless-loop-4k-3d-animation-background-free-video.jpg);
+    background-size: contain;
+    background-color:gainsboro
+}
+img{
+    margin-top: -10%;
+    margin-left: 26%;
+}
+.calculodivcargaeletrica {
+    padding: 20px;
+    background-color: white;
+    margin-top: -6%;
+}
+.calculodivinteracao{
+    padding: 20px;
+    background-color: white;
+    margin-top: 2%;
+}
+button {
+    padding: 5px 15px;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(138, 138, 138, 1) 100%);
+    color: white;
+    border: none;
+    cursor: url("./img/scii.png") 10 10, auto;
+}
+button:hover {
+    background: #4f4d4d;
+    background: linear-gradient(0deg, rgba(79, 77, 77, 1) 0%, rgba(171, 171, 171, 1) 100%);
+    font-size: medium;
+}
+.resultado{
+    color: greenyellow;
+    margin-top: 2%;
+}

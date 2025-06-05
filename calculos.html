@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos de Elementos</title>
+    <link rel="stylesheet" href="calculos.css">
+    <link rel="shortcut icon" href="./img/baixados.png" type="image/x-icon">
+
+</head>
+<body>
+    <img src="./img/2025-05-27-Calculos-de-Elementos.gif" alt="">
+
+    <div class="calculodivcargaeletrica">
+        <h2>Carga Elétrica de um Átomo</h2>
+        <p>Fórmula: Carga Eletrica = n × e</p>
+        <p>Este cálculo determina a carga elétrica total de um objeto ou átomo, multiplicando o número de cargas elementares pela carga elétrica elementar. A carga elementar tem valor fixo de aproximadamente 1,6 × 10<sup>-19</sup> Coulombs.</p>
+        <label>Quantidade de cargas:</label>
+        <input type="number" id="cargas">
+        <button onclick="calcularCarga()">Calcular</button>
+        <div class="resultado" id="resultadoCarga"></div>
+    </div>
+
+    <div class="calculodivinteracao">
+        <h2>Interação entre Cargas</h2>
+        <p>Fórmula: Força = (K × Carga1 × Carga2) / Distancia²</p>
+        <p>Esta fórmula calcula a força de interação elétrica entre duas cargas (K é aproximadamente 9 × 10<sup>9</sup> N·m²/C²) A força varia proporcionalmente ao produto das cargas e inversamente proporcional ao quadrado da distância entre elas.</p>
+        <label>Carga 1:</label>
+        <input type="number" id="carga1">
+        <label>Carga 2:</label>
+        <input type="number" id="carga2">
+        <label>Distância em metros:</label>
+        <input type="number" id="distancia">
+        <button onclick="calcularForca()">Calcular</button>
+        <div class="resultado" id="resultadoForca"></div>
+    </div>
+
+    <script src="./calculos.js"></script>
+
+</body>
+</html>
