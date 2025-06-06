@@ -13,3 +13,8 @@ const cargapog2 = parseFloat(document.getElementById('carga2').value);
 const distancia = parseFloat(document.getElementById('distancia').value);
 const forca = (k * cargapog1 * cargapog2) / (distancia * distancia);
 document.getElementById('resultadoForca').innerHTML = `F = ${forca.toFixed(2)} N`; }
+
+
+document.getElementById("botaotabela").addEventListener("click", function() {
+window.location.href = "./index.html"; 
+});

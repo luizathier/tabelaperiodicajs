@@ -32,3 +32,6 @@ colecaoElementos.forEach(el => {
 });
 const minecraft = document.getElementById('minecraft');
 
+document.getElementById("botaocalculos").addEventListener("click", function() {
+  window.location.href = "./calculos.html"; 
+  });
