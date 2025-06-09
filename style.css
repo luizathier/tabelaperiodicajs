@@ -68,3 +68,7 @@ img{
   font-size: x-large;
 }
   
+html, body {
+  overflow: auto;
+  height: 100%;
+}
